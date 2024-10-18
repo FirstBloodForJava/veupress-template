@@ -34,6 +34,9 @@ jobs:
           node-version: 20
           # 缓存 pnpm 依赖
           cache: pnpm
+      # 安装依赖
+      #- name: Install dependencies
+      #  run: pnpm install -D sass
 
       - name: Build Docs
         env:
